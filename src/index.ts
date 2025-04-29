@@ -29,7 +29,7 @@ app.post('/send-notification', async (req, res) => {
     const result = await sendPushNotificationFCM({ token, title, body });
     res.status(200).send({ success: true, result });
   } catch (error) {
-    res.status(500).send({ success: false, error: error.message });
+    res.status(500).send({ success: false, error: (error as Error).message });
   }
 });
 

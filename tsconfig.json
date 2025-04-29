@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es6",                               // Modern JavaScript çıktısı üret
+    "module": "commonjs",                          // Node.js için uygun modül sistemi
+    "rootDir": "./src",                             // Kaynak dosyaların yeri
+    "outDir": "./dist",                             // Derlenmiş dosyaların çıkacağı yer
+    "esModuleInterop": true,                        // CommonJS modülleri düzgün import edebilmek için
+    "forceConsistentCasingInFileNames": true,       // Dosya adlarının büyük/küçük harf uyumunu kontrol eder
+    "strict": true,                                 // Tüm sıkı tip kontrolleri aktif
+    "skipLibCheck": true                            // Kütüphane tip dosyalarını kontrol etme (daha hızlı build için)
+  }
+}
